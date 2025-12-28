@@ -114,7 +114,7 @@ export const HeroSection = () => {
           </motion.button>
 
           <motion.a
-            href="/vidhya_resume.pdf"
+            href="https://pdflink.to/399c6926/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline-gradient flex items-center gap-2"
