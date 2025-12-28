@@ -114,7 +114,9 @@ export const HeroSection = () => {
           </motion.button>
 
           <motion.a
-            href="#"
+            href="/vidhya_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline-gradient flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
