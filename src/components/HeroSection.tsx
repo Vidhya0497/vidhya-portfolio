@@ -117,11 +117,17 @@ export const HeroSection = () => {
             href="https://pdflink.to/399c6926/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Download Resume - Opens in new tab"
+            role="button"
             className="btn-outline-gradient flex items-center gap-2"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ 
+              scale: 1.05, 
+              boxShadow: '0 0 25px hsla(var(--primary), 0.3)' 
+            }}
             whileTap={{ scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 17 }}
           >
-            <Download size={18} />
+            <Download size={18} aria-hidden="true" />
             <span>Download Resume</span>
           </motion.a>
         </motion.div>
