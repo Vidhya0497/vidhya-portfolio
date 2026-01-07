@@ -8,7 +8,7 @@ const certifications = [
   { name: 'UI/UX Design', provider: 'Le Wagon' },
   { name: 'MongoDB Basics', provider: 'MongoDB University' },
   { name: 'Graphic Design', provider: 'Alison' },
-  { name: 'Java Spring Boot Workshop', provider: 'KenStack Technologies' },
+  { name: 'IOT', provider: 'NPTEL' },
 ];
 
 const achievements = [
