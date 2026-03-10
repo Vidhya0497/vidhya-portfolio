@@ -114,7 +114,7 @@ export const HeroSection = () => {
           </motion.button>
 
           <motion.a
-            href="https://pdflink.to/399c6926/"
+            href="https://r-vidhya-raj.tiiny.site/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download Resume - Opens in new tab"

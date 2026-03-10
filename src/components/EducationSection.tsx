@@ -5,10 +5,10 @@ import { GraduationCap, Award, Trophy, Code } from 'lucide-react';
 
 const certifications = [
   { name: 'Python Essentials', provider: 'Cisco' },
-  { name: 'UI/UX Design', provider: 'Le Wagon' },
-  { name: 'MongoDB Basics', provider: 'MongoDB University' },
-  { name: 'Graphic Design', provider: 'Alison' },
   { name: 'Internet of Things', provider: 'NPTEL' },
+  { name: 'AWS Generative AI', provider: 'AWS' },
+  { name: 'Python Clean Coding', provider: 'Infosys' },
+  { name: 'MongoDB Basics', provider: 'MongoDB University' },
 ];
 
 const achievements = [
