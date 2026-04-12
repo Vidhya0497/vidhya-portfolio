@@ -1,13 +1,24 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Cpu, Globe, Leaf, Stethoscope } from 'lucide-react';
+import { Bot, Cpu, Leaf, Stethoscope } from 'lucide-react';
 import projectFood from '@/assets/project-food.jpg';
-import projectAgri from '@/assets/project-agri.jpg';
+import projectRobot from '@/assets/project-robot.jpg';
 import projectFlower from '@/assets/project-flower.jpg';
 import projectDoctor from '@/assets/project-doctor.jpg';
 
 const projects = [
+  {
+    title: 'No-Code Multi-Robot Workflow Orchestration System',
+    category: 'Robotics / Industrial Automation',
+    icon: Bot,
+    description:
+      'A modern web-based platform that allows users to visually design and control multi-robot workflows without coding. The system supports coordination of AMRs, AGVs, and industrial PLC systems using a unified adapter-based architecture. It includes real-time simulation, intelligent task execution, and telemetry monitoring for efficient warehouse and industrial automation.',
+    tech: ['React (Vite)', 'React Flow', 'JavaScript', 'JSON Workflow Engine'],
+    color: 'from-secondary to-accent',
+    image: projectRobot,
+    featured: true,
+  },
   {
     title: 'Smart Food Freshness Monitoring System',
     category: 'IoT / Embedded Systems',
@@ -17,16 +28,6 @@ const projects = [
     tech: ['IoT Sensors', 'Python', 'Embedded Programming', 'Data Monitoring'],
     color: 'from-primary to-secondary',
     image: projectFood,
-  },
-  {
-    title: 'Real-Time Agricultural Market System',
-    category: 'Web Application',
-    icon: Globe,
-    description:
-      'A digital platform designed to connect farmers directly with buyers. It aims to reduce dependency on intermediaries and provide transparent market access.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-    color: 'from-secondary to-accent',
-    image: projectAgri,
   },
   {
     title: 'Temple Flower Waste Recycling Management System',
@@ -74,10 +75,15 @@ export const ProjectsSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               whileHover={{ y: -4 }}
-              className="project-card group overflow-hidden"
+              className="project-card group overflow-hidden relative"
             >
               {/* Gradient top bar */}
               <div className={`h-1.5 bg-gradient-to-r ${project.color}`} />
+              {'featured' in project && project.featured && (
+                <div className="absolute top-4 right-4 px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full bg-accent/20 text-accent border border-accent/30">
+                  Featured
+                </div>
+              )}
 
               <div className="p-6 flex flex-col md:flex-row gap-6">
                 {/* Text content - left */}
