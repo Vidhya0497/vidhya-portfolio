@@ -79,6 +79,11 @@ export const ProjectsSection = () => {
             >
               {/* Gradient top bar */}
               <div className={`h-1.5 bg-gradient-to-r ${project.color}`} />
+              {'featured' in project && project.featured && (
+                <div className="absolute top-4 right-4 px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full bg-accent/20 text-accent border border-accent/30">
+                  Featured
+                </div>
+              )}
 
               <div className="p-6 flex flex-col md:flex-row gap-6">
                 {/* Text content - left */}
