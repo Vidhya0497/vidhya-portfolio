@@ -75,8 +75,7 @@ export const ProjectsSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               whileHover={{ y: -4 }}
-              className="project-card group overflow-hidden"
-            >
+              className="project-card group overflow-hidden relative"
               {/* Gradient top bar */}
               <div className={`h-1.5 bg-gradient-to-r ${project.color}`} />
               {'featured' in project && project.featured && (
